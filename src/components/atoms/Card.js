@@ -48,6 +48,7 @@ CardMedia.propTypes = {
 //#region Card
 
 const StyledCard = styled.div`
+  border: 1px solid #dcdcdc;
   background-color: #fff;
   border-radius: 4px;
   overflow: hidden;
