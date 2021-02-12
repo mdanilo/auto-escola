@@ -6,10 +6,8 @@ jobs:
     docker:
       - image: circleci/node:14.15.5-browsers
     steps:
-      - run:
-          name: update-npm
-          command: 'npm install -g npm@latest'
       - checkout
+      - run: cd server && npm install && npm test
       - node/install:
           install-yarn: true
       - run: node --version
